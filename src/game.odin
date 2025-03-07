@@ -55,9 +55,6 @@ game_init :: proc() {
 				format = sdl.GetGPUSwapchainTextureFormat(gpu, window)
 			})
 		},
-		rasterizer_state = {
-			fill_mode = .LINE,
-		}
 	})
 	sdl.ReleaseGPUShader(gpu, shader_grid_vert)
 	sdl.ReleaseGPUShader(gpu, shader_grid_frag)
